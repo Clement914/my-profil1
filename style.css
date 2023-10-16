@@ -1,6 +1,6 @@
 
 body{
- 	background: #DCDCCC;
+ 	background: #EB9999;
  	color: #steelblue;
  	font-family: 'Lora', serif; 
  	font-size: 16px;
@@ -12,12 +12,12 @@ h1, h2, h3 {
 h1 {
   	color: #blueviolet;
   	font-size: 36px;
-  	font-weight: 600;
+  	font-weight: 602;
 }
 h2 {
   	color: #blue;  
   	font-size: 25px;
-  	font-weight: 400;
+  	font-weight: 402;
 }
 a {
  	text-decoration: inherit;
@@ -61,7 +61,7 @@ a:hover {
 }
 
 .btn-blue {
-	background-color: #95541F;
+	background-color: #CE99EB;
 	color: white;
 	padding: 15px 20px;
 	border-radius: 4px;
@@ -83,7 +83,7 @@ a:hover {
 
 .list-inline i {
 	font-size: 50px;
-	color: rgb(149, 84, 31);
+	color: rgb(150, 82, 30);
 }
 .list-inline i:hover {
 	color: black;
