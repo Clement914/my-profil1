@@ -1,63 +1,62 @@
- <!DOCTYPE html> 
-<html>
-  <head>
-<title>Clément Bloch's profile</title>
-<meta name="description" content="This is the profile of Clément">
-<meta charset="utf-8">  
-<script src="https://kit.fontawesome.com/a949d5b5a3.js" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-  </head>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre BDE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
+    <header>
+        <h1>Notre BDE</h1>
+        <nav>
+            <ul>
+                <li><a href="#service1">Nourriture</a></li>
+                <li><a href="#service2">Voiture</a></li>
+                <li><a href="#service3">Cadeaux</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="container">
-<div class="card-white" id="introduction">
-    <h1>Hello everyone, I'm Clément!</h1>
-  <img src="images/photo-profile.jpg" class="img-circle" height="35%" width="30%" alt="photo-profile">
-  <p>
-Hello, my name is Clément and this is my profile! I'm a student at Ieseg for 5 years since 2023.</p>
-  <a href="https://www.ieseg.fr" target="_blank" class="btn-blue"> Discover My School</a>
-</div>
-<div class="card-white">
-        <h2>Passion</h2>
-        <p>
-         Since I was little, I have loved karting. I have completed numerous karting courses and reached a good level.
-        </p> 
-        </div>
-<div class="card-white">
-    <h2>Music</h2> 
-      <p>
-       Music is a way to relax me. I listen to all types of music including rap, electro and RnB.
-      </p> 
-      </div>
-      <div class="card-white">
-      <h2>Travels</h2>
-      <p>
-     I love travelling. I had the chance to take many trips thanks to my parents. I was able to go to Africa, the United States, Asia and Europe.
-      </p> 
-    </div>
-      <div class="card-white">
-      <h2>Follow me</h2>
-    <ul class="list-inline">
-      <li>
-      <a href="www.linkedin.com/in/clément-bloch"target="_blank">
-      <i class="fab fa-linkedin"></i>
-      </a>
-      </li>
-      <li>
-      <a href="https://www.facebook.com/profile.php?id=100093924783927"target="_blank">
-      <i class="fab fa-facebook-square"></i>
-      </a>
-      </li>
-      <li>
-      <a href="https://instagram.com/clem_914?igshid=OGQ5ZDc2ODk2ZA=="target="_blank">
-      <i class="fab fa-instagram-square"></i>
-      </a>
-      </li>
-    </ul>
-    </div>
+    <main>
+        <section id="service1">
+            <h2>Nourriture</h2>
+            <img src="https://via.placeholder.com/300x200.png?text=Nourriture" alt="Nourriture">
+            <p>Description du service de nourriture.</p>
+            <button onclick="showForm('nourriture')">Réserver ce service</button>
+        </section>
+
+        <section id="service2">
+            <h2>Voiture</h2>
+            <img src="https://via.placeholder.com/300x200.png?text=Voiture" alt="Voiture">
+            <p>Description du service de voiture.</p>
+            <button onclick="showForm('voiture')">Réserver ce service</button>
+        </section>
+
+        <section id="service3">
+            <h2>Cadeaux</h2>
+            <img src="https://via.placeholder.com/300x200.png?text=Cadeaux" alt="Cadeaux">
+            <p>Description du service de cadeaux.</p>
+            <button onclick="showForm('cadeaux')">Réserver ce service</button>
+        </section>
+    </main>
+
+    <div id="form-container" class="form-container">
+        <h3>Formulaire de Réservation</h3>
+        <form id="reservationForm" onsubmit="submitForm(event)">
+            <input type="text" id="nom" name="nom" placeholder="Nom" required>
+            <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+            <input type="text" id="adresse" name="adresse" placeholder="Adresse" required>
+            <input type="tel" id="telephone" name="telephone" placeholder="Numéro de téléphone" required>
+            <button type="submit">Envoyer</button>
+        </form>
+        <button onclick="closeForm()">Fermer</button>
     </div>
 
+    <footer>
+        <p>&copy; 2024 Notre BDE</p>
+    </footer>
 
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
